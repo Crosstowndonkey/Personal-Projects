@@ -6,7 +6,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # Get the bot token from an environment variable for security
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-CAT_API_URL = 'https://api.thecatapi.com/v1/images/search?limit=10'
+CAT_API_URL = '#cat_api_url'
 
 # Initialize the bot
 intents = discord.Intents.default()
@@ -25,7 +25,7 @@ async def on_ready():
 @tasks.loop(hours=4)  # Change this interval as needed
 async def post_cat_pictures():
     # Specify the channel ID where the bot will post cat pictures
-    channel_id = 1210106017761730610
+    channel_id = #channel id here
     channel = client.get_channel(channel_id)
 
     if channel is not None:
