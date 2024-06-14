@@ -32,5 +32,5 @@ total_tip = total_bill_as_int * user_tip_percentage
 total_cost = total_bill_as_int + total_tip 
 individual_cost = total_cost / how_many_people_int
 individual_cost_rounded = round(individual_cost, 2)
-
-print(f"Each Person should pay: ${individual_cost_rounded}")
+final_amount = "{:.2f}".format(individual_cost_rounded)
+print(f"Each Person should pay: ${final_amount}")
